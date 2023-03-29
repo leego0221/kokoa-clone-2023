@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/*
+font-family는 글꼴, 맨 앞에거 없으면 그 다음거, 그 다음거 순으로 적용
+구글 폰트에서 찾아서 고르고 복붙하면 됨
+html <link> 태그로 갖고 올 수도 있지만 @import 사용해서 css에서 적용하는 걸 추천
+*/
+
+.status-bar {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 아니 child 오타 실화냐;; 어떻게 chlld라고... */
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.fa-battery-full {
+  margin: 0 5px;
+}
+/* 
+justify-content: center;로 중앙정렬이 되긴 하지만 시계가 약간 벗어남
+-> .status-bar__column의 width를 똑같이 조정하고
+   각 display를 flex로 만들어서 정렬을 하면 됨(css hack)
+css는 그냥 디테일을 얼마나 많이 만지냐의 차이인 듯 */
