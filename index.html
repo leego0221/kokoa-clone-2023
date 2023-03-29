@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Talk</title>
+    <title>Welcome to Kokoa Clone</title>
   </head>
   <body>
     <div id="status-bar">
-      <!-- 그냥 column은 중복될 여지가 너무 많아서 상위 div의 id인 status-bar를 __으로 연결함 -->
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fa-solid fa-wifi"></i>
@@ -22,6 +21,21 @@
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <!-- 버튼은 input으로 해도 되고 button으로 해도 되고 -->
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
     <script
       src="https://kit.fontawesome.com/a6d7b391ca.js"
       crossorigin="anonymous"
