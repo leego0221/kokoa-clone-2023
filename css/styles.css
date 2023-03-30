@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
 @import "status-bar.css";
+@import "variables.css";
 /* 파일 분할
 reset.css로 브라우저 기본값 싹 다 초기화 시켜놓고 새로 만드는 게 좋음*/
 
@@ -15,7 +16,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-/* 글자 중앙정렬은 text-align: center로 하면 됨 */
 
 .welcome-header__title {
   margin-bottom: 20px;
@@ -23,8 +23,48 @@ body {
 }
 
 .welcome-header__text {
-  width: 60%;
   opacity: 0.7;
 }
-/* width로 양옆을 제한, <br>로 조절해도 되지 않나?
-회색 글자는 색깔로 해도 되고 투명도 조절로 해도 되고 */
+/* width로 양옆을 제한했는데 나는 그냥 <br>로 조절 */
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+/* not()으로 원하지 않는 것을 제외할 수 있음 */
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
+/* inherit은 부모의 속성을 그대로 따라가는 것, 위에선 color */
