@@ -1,38 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+/* 파일 분할
+reset.css로 브라우저 기본값 싹 다 초기화 시켜놓고 새로 만드는 게 좋음*/
+
 body {
   font-family: "Open Sans", sans-serif;
 }
-/*
-font-family는 글꼴, 맨 앞에거 없으면 그 다음거, 그 다음거 순으로 적용
-구글 폰트에서 찾아서 고르고 복붙하면 됨
-html <link> 태그로 갖고 올 수도 있지만 @import 사용해서 css에서 적용하는 걸 추천
-*/
 
-.status-bar {
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
   display: flex;
-  justify-content: center;
-}
-.status-bar__column {
-  width: 33%;
-}
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
 }
-/* 아니 child 오타 실화냐;; 어떻게 chlld라고... */
-.status-bar__column:first-child span {
-  margin-right: 5px;
+/* 글자 중앙정렬은 text-align: center로 하면 됨 */
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
 }
-.fa-battery-full {
-  margin: 0 5px;
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
 }
-/* 
-justify-content: center;로 중앙정렬이 되긴 하지만 시계가 약간 벗어남
--> .status-bar__column의 width를 똑같이 조정하고
-   각 display를 flex로 만들어서 정렬을 하면 됨(css hack)
-css는 그냥 디테일을 얼마나 많이 만지냐의 차이인 듯 */
+/* width로 양옆을 제한, <br>로 조절해도 되지 않나?
+회색 글자는 색깔로 해도 되고 투명도 조절로 해도 되고 */
