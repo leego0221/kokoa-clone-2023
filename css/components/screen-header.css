@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: var(--horizontal-space);
 }
 /* 여기서 space-between을 했는데 아이콘끼리 간격이 벌어지지 않은 이유는
 아이콘끼리는 같은 class로 묶여있기 때문이라고 추측 */
