@@ -1,11 +1,16 @@
 .screen-header {
+  position: sticky;
+  top: 26px;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
 }
-/* 여기서 space-between을 했는데 아이콘끼리 간격이 벌어지지 않은 이유는
-아이콘끼리는 같은 class로 묶여있기 때문이라고 추측 */
+/* 뒷배경 하얀색으로 해서 진짜 상태바처럼 수정
+   position: sticky는 조금 더 찾아봐야될 듯 */
 
 .screen-header__title {
   font-size: 32px;

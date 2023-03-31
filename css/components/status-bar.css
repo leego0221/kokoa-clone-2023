@@ -1,11 +1,13 @@
 .status-bar {
-  position: sticky; /* 확인 */
+  position: sticky;
   top: 0px;
   width: 100%;
+  background-color: white;
   display: flex;
   justify-content: center;
   padding: 5px 3px;
 }
+/* 뒷배경 하얀색으로 해서 진짜 상태바처럼 수정 */
 
 .status-bar__column {
   width: 33%;
