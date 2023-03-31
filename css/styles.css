@@ -3,9 +3,10 @@
 @import "reset.css";
 @import "variables.css";
 
-/* Componentes */
+/* Components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
