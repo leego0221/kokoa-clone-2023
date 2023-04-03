@@ -23,3 +23,8 @@
   left: 15px;
   bottom: 15px;
 }
+
+.nav__link .badge__dot {
+  top: -10px;
+  left: 30px;
+}
