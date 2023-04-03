@@ -1,4 +1,4 @@
-.badge {
+.badge__number {
   background-color: tomato;
   width: 30px;
   height: 30px;
@@ -8,4 +8,14 @@
   align-items: center;
   color: white;
   font-weight: 600;
+}
+
+.badge__dot {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: 22px;
+  bottom: 20px;
 }

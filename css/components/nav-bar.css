@@ -23,12 +23,3 @@
   left: 15px;
   bottom: 15px;
 }
-
-.nav__dot {
-  background-color: tomato;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  position: absolute;
-  left: 28px;
-}
