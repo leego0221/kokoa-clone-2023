@@ -43,5 +43,17 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* chats의 21:22와 빨간 동그라미 정렬 위해 flex 쓰면
+   기존의 friends column요소가 무너지게 됨
+   클래스를 따로 나누지 않고 friends.html 파일 가서 수정함
+*/
+
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
 }

@@ -8,9 +8,8 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
+  margin-bottom: 15px;
 }
-/* 뒷배경 하얀색으로 해서 진짜 상태바처럼 수정
-   position: sticky는 조금 더 찾아봐야될 듯 */
 
 .screen-header__title {
   font-size: 32px;
