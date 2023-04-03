@@ -6,8 +6,10 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  z-index: 1;
 }
-/* 뒷배경 하얀색으로 해서 진짜 상태바처럼 수정 */
+/* z-index: 정수 통해 레이어 상 가장 위에 올 것 선택 가능!
+   opacity 설정 시 레이어 맨 앞으로 오는 문제 해결*/
 
 .status-bar__column {
   width: 33%;
