@@ -1,0 +1,28 @@
+.alt-header {
+  position: sticky;
+  top: 26px;
+  background-color: white;
+  padding: 15px var(--horizontal-space);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+/* 여기선 width: 100%; box-sizing: border-box; 를 안해줌
+   Settings 안의 요소가 margin: auto 처리와 동일한 것으로 보임
+*/
+
+.alt-header__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+}
+/* ??? margin: auto 뭐야 */
