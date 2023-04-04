@@ -41,3 +41,7 @@
   font-size: 36px;
   color: white;
 }
+
+.more-suggestions__icon-text {
+  color: var(--grey);
+}

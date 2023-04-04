@@ -71,3 +71,7 @@
   margin-bottom: 10px;
   display: block;
 }
+
+.user-component__column:last-child i {
+  color: #2e363e;
+}
