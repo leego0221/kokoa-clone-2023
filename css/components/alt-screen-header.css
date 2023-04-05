@@ -22,7 +22,22 @@
   margin-right: auto;
 }
 
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
 .alt-header__column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }
-/* ??? margin: auto 뭐야 */
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+/* margin: auto는 중앙정렬을 위함
+   완벽한 중앙정렬을 위해 width: 33% 후 조정 */

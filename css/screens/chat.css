@@ -4,4 +4,13 @@
 
 #chat-screen {
   background-color: #abc1d1;
+  height: 10000vh;
 }
+
+/* #chat-screen .alt-header,
+#chat-screen .status-bar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+} */
+/* position: sticky가 훨씬 나은 것으로 판단, 삭제 */

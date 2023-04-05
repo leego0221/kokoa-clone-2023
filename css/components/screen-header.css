@@ -12,7 +12,7 @@
   z-index: 1;
 }
 /* z-index: 정수 통해 레이어 상 가장 위에 올 것 선택 가능!
-   opacity 설정 시 레이어 맨 앞으로 오는 문제 해결*/
+   opacity 설정 시 레이어 맨 앞으로 오는 문제 해결 */
 
 .screen-header__title {
   font-size: 32px;
