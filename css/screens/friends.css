@@ -55,7 +55,7 @@
   align-items: center;
   font-size: 132px;
   animation: hideSplashScreen 0.3s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   /* forwards로 애니메이션 마지막 속성값 유지해줌 */
 }
 

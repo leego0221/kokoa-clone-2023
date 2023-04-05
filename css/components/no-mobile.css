@@ -1,0 +1,21 @@
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 200vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  top: 0;
+}
+
+#no-mobile span {
+  margin-top: 50%;
+}
+
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+} /* 스크린 너비가 최대 645px일 때까진 display: none; */
