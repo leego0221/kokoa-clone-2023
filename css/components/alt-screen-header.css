@@ -9,9 +9,6 @@
   justify-content: center;
   z-index: 1;
 }
-/* 여기선 width: 100%; box-sizing: border-box; 를 안해줌
-   Settings 안의 요소가 margin: auto 처리와 동일한 것으로 보임
-*/
 
 .alt-header__title {
   font-size: 24px;
