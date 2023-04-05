@@ -29,3 +29,36 @@
   color: var(--grey);
   align-items: center;
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* display: none;이나 visibility: hidden;으로 안 보이게 할 수는 있지만
+   요소를 완벽하게 제거할 수는 없음, 이를 위해서 Javascript 필요함
+*/
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 2; /* 상단바 덮기 위해 추가 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+  /* forwards로 애니메이션 마지막 속성값 유지해줌 */
+}
+
+#splash-screen i {
+  color: #3c1e1e;
+}
